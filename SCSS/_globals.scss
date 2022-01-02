@@ -1,0 +1,99 @@
+// device size
+$device-width-mobile: 375px;
+$device-width-desktop: 1440px;
+$font-size: 18px;
+// font
+@media screen and (min-width: $device-width-mobile) {
+  $font-size: 15px;
+  .card {
+    margin: 0.3rem 1rem 0.1rem 0.1rem ;
+  }
+}
+
+@media screen and (min-width: $device-width-desktop) {
+  $font-size: 18px;
+  .card {
+    margin: 2rem 1rem 1rem 0.75rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+  }
+}
+
+$font-family: "Outfit sans-serif arial";
+
+// font weights
+$font-weight-normal: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+
+// colors
+$bg-color-main: hsl(217, 54%, 11%);
+$bg-color-card: hsl(216, 50%, 16%);
+$bg-color-line: hsl(215, 32%, 27%);
+
+$color-ethereum: hsl(178, 100%, 50%);
+$color-secondary-text: hsl(215, 51%, 70%);
+$color-white: hsl(0, 0%, 100%);
+
+
+// global style classes
+.normal {
+  font-weight: $font-weight-normal;
+}
+
+.medium {
+  font-weight: $font-weight-medium;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+
+.ethereum {
+  color: $color-ethereum;
+}
+
+.text-secondary {
+  color: $color-secondary-text;
+}
+
+.color-white {
+  color: $color-white;
+}
+
+
+.bg-main {
+  background: $bg-color-main;
+}
+
+.bg-card {
+  background: $bg-color-card;
+}
+
+.bg-line {
+  background: $bg-color-line;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.d-flex-fs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.d-flex-spbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+hr {
+  margin-top: 1.5rem;
+}

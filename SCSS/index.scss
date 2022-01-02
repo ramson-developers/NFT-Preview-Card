@@ -1,0 +1,65 @@
+@import 'globals';
+
+.attribution {
+  font-size: 0.5rem;
+  text-align: center;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+}
+
+.card {
+  // center card vertically
+  padding: 1.5rem;
+  width: 22rem;
+  position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -55%);
+  border-radius: 0.85rem;
+
+  &-head {
+    img {
+      width: 22rem;
+      border-radius: 0.85rem;
+    }
+
+    h1:hover {
+      color: $color-ethereum;
+      cursor: pointer;
+    }
+  }
+
+  //  box sahdows
+  box-shadow: 1rem 1rem 1rem 1rem $bg-color-main;
+}
+
+.creator {
+  & > img {
+    height: 2.78rem;
+    margin-right: 1.5rem;
+  }
+
+  & > h3 > span:hover {
+    color: $color-ethereum;
+    cursor: pointer;
+  }
+}
+
+.time > img {
+  margin-right: 0.5rem;
+}
+
+.price > img {
+  margin-right: 0.5rem;
+}
+
